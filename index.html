@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Leaflet.js met TMS in RD in WGS-84</title>
+    <!--meta name="viewport" content="initial-scale=1.0, user-scalable=no" /-->
+	<!-- viewport setting for lab 8 mobile use -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Edward Mac Gillavry">
+	<meta name="author" content="TU Delft Geomatics GISt">
+
+	<link rel="stylesheet" href="leaflet/leaflet.css" />	
+	<link rel="stylesheet" href="src/leaflet.draw.css"/>		
+    <link rel="stylesheet" href="main.css" />
+    <!-- no favicon -->
+    <link rel="shortcut icon" href="#"> 
+	
+</head>
+    <body>
+        <div id="map-canvas"></div>
+        <p id="errors"></p>
+		
+		<script src="leaflet/leaflet.js"></script>
+				
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4.js"></script>
+		<script src="lib/proj4leaflet.js"></script>
+		<script src="lib/leaflet.wms.js"></script>
+
+    <script src="src/Leaflet.draw.js"></script>
+    <script src="src/Leaflet.Draw.Event.js"></script>
+
+    <script src="src/edit/handler/Edit.Poly.js"></script>
+    <script src="src/edit/handler/Edit.SimpleShape.js"></script>
+    <script src="src/edit/handler/Edit.Circle.js"></script>
+    <script src="src/edit/handler/Edit.Rectangle.js"></script>
+    <script src="src/edit/handler/Edit.Marker.js"></script>
+
+    <script src="src/draw/handler/Draw.Feature.js"></script>
+    <script src="src/draw/handler/Draw.Polyline.js"></script>
+    <script src="src/draw/handler/Draw.Polygon.js"></script>
+    <script src="src/draw/handler/Draw.SimpleShape.js"></script>
+    <script src="src/draw/handler/Draw.Rectangle.js"></script>
+    <script src="src/draw/handler/Draw.Circle.js"></script>
+    <script src="src/draw/handler/Draw.Marker.js"></script>
+
+    <script src="src/ext/TouchEvents.js"></script>
+    <script src="src/ext/LatLngUtil.js"></script>
+    <script src="src/ext/GeometryUtil.js"></script>
+    <script src="src/ext/LineUtil.Intersect.js"></script>
+    <script src="src/ext/Polyline.Intersect.js"></script>
+    <script src="src/ext/Polygon.Intersect.js"></script>
+
+    <script src="src/Control.Draw.js"></script>
+    <script src="src/Tooltip.js"></script>
+    <script src="src/Toolbar.js"></script>
+
+    <script src="src/draw/DrawToolbar.js"></script>
+    <script src="src/edit/EditToolbar.js"></script>
+    <script src="src/edit/handler/EditToolbar.Edit.js"></script>
+    <script src="src/edit/handler/EditToolbar.Delete.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<script src="lib/wfsGeojson.js"></script>
+        <script src="data/events_wfs.js"></script>
+		
+        <script src="insert.js"></script>			
+        <script src="main.js"></script>
+ 
+    </body>
+</html>
